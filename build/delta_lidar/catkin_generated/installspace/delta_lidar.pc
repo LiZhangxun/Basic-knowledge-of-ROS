@@ -1,0 +1,8 @@
+prefix=/home/lizhangxun/LZX_LEARNING_ROS/install
+
+Name: delta_lidar
+Description: Description of delta_lidar
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

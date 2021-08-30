@@ -1,0 +1,28 @@
+<launch>
+  <group ns="ns1">
+    <node pkg="ros_tutorials_topic" type="topic_publisher" name="topic_publisher" output="screen"/>
+    <node pkg="ros_tutorials_topic" type="topic_subscriber" name="topic_subscriber" output="screen"/>
+  </group>
+  <!-- <group>是对指定节点进行分组的标签。选项有ns。这是命名空间（namespace），是组的名称，属于该组的节点和消息都包含在由ns指定的名称中-->
+  <group ns="ns2">
+    <node pkg="ros_tutorials_topic" type="topic_publisher" name="topic_publisher" output="screen"/>
+    <node pkg="ros_tutorials_topic" type="topic_subscriber" name="topic_subscriber" output="screen"/>
+  </group>
+</launch>
+
+
+<!--注释-->
+<!--  
+ <launch> 指roslaunch语句的开始和结束。
+■ <node> 这是对于节点运行的标签。您可以更改功能包、节点名称和执行名称。
+■ <machine> 可以设置运行该节点的PC的名称、address、ros-root和ros-package-path。
+■ <include> 您可以加载属于同一个功能包或不同的功能包的另一个launch，并将其作为一个launch
+文件来运行。
+■ <remap> 可以更改节点名称、话题名称等等，在节点中用到的ROS变量的名称。
+■ <env> 设置环境变量，如路径和IP（很少使用）。
+■ <param> 设置参数名称、类型、值等
+■ <rosparam> 可以像rosparam命令一样，查看和修改load、dump和delete等参数信息。
+■ <group> 用于分组正在运行的节点。
+■ <test> 用于测试节点。类似于<node>，但是有可以用于测试的选项。
+■ <arg> 可以在launch文件中定义一个变量，以便在像下面这样运行时更改参数。
+-->

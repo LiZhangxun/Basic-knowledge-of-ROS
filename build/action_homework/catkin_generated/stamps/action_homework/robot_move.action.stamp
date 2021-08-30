@@ -1,0 +1,10 @@
+#定义目标信息goal
+float32 pose_x
+float32 pose_y
+---
+#定义结果信息result
+float32 finalpose_x
+float32 finalpose_y
+---
+#定义周期反馈消息feedback
+float32 percent_complete

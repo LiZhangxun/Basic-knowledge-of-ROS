@@ -1,0 +1,8 @@
+prefix=/home/lizhangxun/LZX_LEARNING_ROS/devel
+
+Name: learning_action
+Description: Description of learning_action
+Version: 0.0.0
+Cflags: -I/home/lizhangxun/LZX_LEARNING_ROS/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

@@ -1,0 +1,9 @@
+#定义目标信息goal
+uint32 dishwasher_id
+#Specify which dishwasher we want to use
+---
+#定义结果信息result
+uint32 total_dishes_cleaned
+---
+#定义周期反馈消息feedback
+float32 percent_complete

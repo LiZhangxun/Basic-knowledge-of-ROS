@@ -1,0 +1,8 @@
+prefix=/home/lizhangxun/LZX_LEARNING_ROS/devel
+
+Name: turtle_spawn_command
+Description: Description of turtle_spawn_command
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs roscpp rospy std_msgs turtlesim message_runtime

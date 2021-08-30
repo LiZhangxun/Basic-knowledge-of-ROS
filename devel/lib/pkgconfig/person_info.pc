@@ -1,0 +1,8 @@
+prefix=/home/lizhangxun/LZX_LEARNING_ROS/devel
+
+Name: person_info
+Description: Description of person_info
+Version: 0.0.0
+Cflags: -I/home/lizhangxun/LZX_LEARNING_ROS/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

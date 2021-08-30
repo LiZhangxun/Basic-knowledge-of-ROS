@@ -1,0 +1,4 @@
+<launch>
+     <node pkg="action_homework" type="robotmove_client" name="robotmove_client" output="screen" />
+     <node pkg="action_homework" type="robotmove_server" name="robotmove_server" output="screen" />
+</launch>

@@ -1,0 +1,52 @@
+<launch>
+     <node pkg="person_info" type="person_info_pub" name="person_info_pub" output="screen" />
+     <node pkg="person_info" type="person_info_sub" name="person_info_sub" output="screen" />
+</launch>
+
+
+
+<!--注释--> 
+<!--
+<node>:
+    pkg： 节点所在功能包名称；
+    type：节点可执行文件名称；（比如rosrun 哪个文件）
+    name：节点运行时的名称；（节点运行之后的名字，和cpp里面的init（里面的节点名称，这个launch里面会取代掉程序里面初始化的名字）；
+    respawn:配置节点是否重启（在节点运行时中途失败了）；
+    required：要求某个节点必须启动；
+    args：可以输入参数；
+    output：当前信息打印到终端
+    ns：节点命名空间，避免节点命名冲突
+
+<param>/<rosparam>:
+    //设置ros系统运行中的参数，存储在参数服务器中。
+    <param name="output_frame"value="odom"/>
+    name:参数名；
+    value:参数值；
+
+    //加载参数文件中的多个参数：
+    <rosparam file>="params.yaml"command="load"ns="params"/>
+
+<arg>:
+    //launch 文件内部的局部变量，仅限于launch文件使用
+    <arg nmae="arg-name"default="arg-value"/>
+    name:参数名；
+    value:参数值;
+
+    调用：
+    <param name="foo" value="$(arg arg-name)"/>
+    <node name="node" pkg="package" type="type" args="$(arg arg-name)"/>
+
+<remap>:
+    //重映射ros计算图资源命名。（把原来的名字换掉，原来的名字消失）
+    <remap from="/turtlebot/cmd_vel" to="/cmd_vel"/>
+    from:原来的名字；
+    to：新的名字；
+
+<include>:嵌套语法,一个launch文件可以包含另一个launch文件，相当于include。
+    //包含其它的launch文件，类似于c语言中的头文件包含；
+    <include file="$(dirname)/other.lauch"/>
+    file:包含其它launch文件的文件路径；
+语法：<include file="$(dirname)/other.launch"/>
+例如：<include file="$(find learning_launch)/launch/simple.launch" />//find为系统指令，learning_launch为包名。
+--> 
+

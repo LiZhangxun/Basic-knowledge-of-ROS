@@ -1,0 +1,9 @@
+<launch>
+     <node pkg="turtlesim" type="turtlesim_node" name="sim" output="screen" />
+     <node pkg="turtlesim" type="turtle_teleop_key" name="teleop_turtle" output="screen"/>
+
+     <!-- 需要输入海龟名字作为输入参数-->
+     <node pkg="learning_tf" type="turtle_tf_broadcaster" name="turtle1_tf_broadcaster" args="/turtle1" output="screen" />
+     <node pkg="learning_tf" type="turtle_tf_broadcaster" name="turtle2_tf_broadcaster" args="/turtle2" output="screen" />
+     <node pkg="learning_tf" type="turtle_tf_listener" name="my_tf_listener" output="screen" />
+</launch>

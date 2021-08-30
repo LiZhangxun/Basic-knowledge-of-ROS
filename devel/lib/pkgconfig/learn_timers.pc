@@ -1,0 +1,8 @@
+prefix=/home/lizhangxun/LZX_LEARNING_ROS/devel
+
+Name: learn_timers
+Description: Description of learn_timers
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

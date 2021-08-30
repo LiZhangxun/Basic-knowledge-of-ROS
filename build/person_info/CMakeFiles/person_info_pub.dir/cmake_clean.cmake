@@ -1,0 +1,10 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/person_info_pub.dir/src/person_info_pub.cpp.o"
+  "/home/lizhangxun/LZX_LEARNING_ROS/devel/lib/person_info/person_info_pub.pdb"
+  "/home/lizhangxun/LZX_LEARNING_ROS/devel/lib/person_info/person_info_pub"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/person_info_pub.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

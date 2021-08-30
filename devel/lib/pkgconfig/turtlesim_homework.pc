@@ -1,0 +1,8 @@
+prefix=/home/lizhangxun/LZX_LEARNING_ROS/devel
+
+Name: turtlesim_homework
+Description: Description of turtlesim_homework
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

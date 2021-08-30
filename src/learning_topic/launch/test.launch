@@ -1,0 +1,8 @@
+<launch>
+     <node pkg="learning_topic" type="topic_pub" name="topic_pub1" output="screen" >
+	<remap from="/topic_pub1" to="/topic_pub_L"/>
+     </node>
+     <node pkg="learning_topic" type="topic_pub" name="topic_pub2" output="screen" >
+	<remap from="/topic_pub2" to="/topic_pub_R"/>
+     </node>
+</launch>
