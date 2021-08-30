@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<robot name="arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="$(find mbot_description)/urdf/xacro/mbot_base.xacro" />
+
+    <!--调用宏定义,这里文件名和这个宏的名字一样-->
+    <mbot_base/>
+
+</robot>

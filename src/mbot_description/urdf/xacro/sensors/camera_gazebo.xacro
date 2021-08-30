@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="camera">
+
+    <xacro:macro name="usb_camera" params="prefix:=camera">
+        <!-- Create laser reference frame -->
+        <link name="${prefix}_link">
+            <inertial>
+                <mass value="0.1" />
+                <origin xyz="0 0 0" />
+                <inertia ixx="0.01" ixy="0.0" ixz="0.0"
+                         iyy="0.01" iyz="0.0"
+                         izz="0.01" />
+            </inertial>
+
+            <visual>
+                <origin xyz=" 0 0 0 " rpy="0 0 0" />
+                <geometry>
+                    <box size="0.01 0.04 0.04" />
+                </geometry>
+                <material name="black"/>
+            </visual>
+
+            <collision>
+                <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+                <geometry>
+                    <box size="0.01 0.04 0.04" />
+                </geometry>
+            </collision>
+        </link>
+        <gazebo reference="${prefix}_link">
+            <material>Gazebo/Black</material>
+        </gazebo>
+
+        <gazebo reference="${prefix}_link">
+            <sensor type="camera" name="camera_node">
+                <update_rate>30.0</update_rate> <!-- 摄像头发布的频率1s钟30次-->
+                <camera name="head">
+                    <horizontal_fov>1.3962634</horizontal_fov> <!--摄像头可视的范围-->
+                    <image>
+                        <width>1280</width><!-- 摄像头的分辨率1280*720-->
+                        <height>720</height>
+                        <format>R8G8B8</format><!-- 数据格式-->
+                    </image>
+                    <clip>
+                        <near>0.02</near><!-- 最近的距离-->
+                        <far>300</far><!-- 最远的距离-->
+                    </clip>
+                    <noise>
+                        <type>gaussian</type><!-- 高斯噪声-->
+                        <mean>0.0</mean>
+                        <stddev>0.007</stddev>
+                    </noise>
+                </camera>
+                <plugin name="gazebo_camera" filename="libgazebo_ros_camera.so"> <!-- gazebo提供的摄像头插件-->
+                    <alwaysOn>true</alwaysOn>
+                    <updateRate>0.0</updateRate>
+                    <cameraName>/camera</cameraName> <!-- camera命名空间-->
+                    <imageTopicName>image_raw</imageTopicName><!-- camera发布的图像的话题名字-->
+                    <cameraInfoTopicName>camera_info</cameraInfoTopicName><!-- camera发布的摄像头信息的话题名字-->
+                    <frameName>camera_link</frameName><!-- camera发布的坐标系-->
+                    <hackBaseline>0.07</hackBaseline>
+                    <distortionK1>0.0</distortionK1>
+                    <distortionK2>0.0</distortionK2>
+                    <distortionK3>0.0</distortionK3>
+                    <distortionT1>0.0</distortionT1>
+                    <distortionT2>0.0</distortionT2>
+                </plugin>
+            </sensor>
+        </gazebo>
+
+    </xacro:macro>
+</robot>

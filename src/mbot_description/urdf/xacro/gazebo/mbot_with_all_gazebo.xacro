@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<robot name="arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="$(find mbot_description)/urdf/xacro/gazebo/mbot_base_gazebo.xacro" />
+    <xacro:include filename="$(find mbot_description)/urdf/xacro/sensors/lidar_gazebo.xacro" />
+    <xacro:include filename="$(find mbot_description)/urdf/xacro/sensors/camera_gazebo.xacro" />
+    <xacro:include filename="$(find mbot_description)/urdf/xacro/sensors/kinect_gazebo.xacro" />
+
+    <!-- lidar -->
+    <xacro:property name="lidar_offset_x" value="0" />
+    <xacro:property name="lidar_offset_y" value="0" />
+    <xacro:property name="lidar_offset_z" value="0.22" />
+    <!-- Camera -->
+    <xacro:property name="camera_offset_x" value="0.17" />
+    <xacro:property name="camera_offset_y" value="0" />
+    <xacro:property name="camera_offset_z" value="0.10" />
+    <!-- kinect -->
+    <xacro:property name="kinect_offset_x" value="-0.15" />
+    <xacro:property name="kinect_offset_y" value="0" />
+    <xacro:property name="kinect_offset_z" value="0.11" />
+    <!-- 激光雷达基座 -->
+    <link name="base_link2">
+        <visual>
+            <origin xyz=" 0 0 0.15" rpy="0 0 0" />
+            <geometry>
+                <cylinder length="0.11" radius="0.01"/>
+            </geometry>
+            <material name="yellow" />
+        </visual>
+        <collision>
+            <origin xyz=" 0 0 0.15" rpy="0 0 0" />
+            <geometry>
+                <cylinder length="0.11" radius="0.11"/>
+            </geometry>
+        </collision>   
+        <cylinder_inertial_matrix  m="15" r="0.11" h="0.11" />
+    </link>
+
+    <joint name="base_joint" type="fixed">
+        <origin xyz="0 0 -0.02" rpy="0 0 0" />
+        <parent link="base_link"/>
+        <child link="base_link2"/>
+    </joint>
+
+        <gazebo reference="base_link2">
+            <material>Gazebo/Purple</material>
+        </gazebo>
+
+    <!-- lidar -->
+    <joint name="lidar_joint" type="fixed">
+        <origin xyz="${lidar_offset_x} ${lidar_offset_y} ${lidar_offset_z}" rpy="0 0 0" />
+        <parent link="base_link2"/>
+        <child link="laser_link"/>
+    </joint>
+
+    <!-- kinect -->
+    <joint name="kinect_joint" type="fixed">
+        <origin xyz="${kinect_offset_x} ${kinect_offset_y} ${kinect_offset_z}" rpy="0 0 -3.14" />
+        <parent link="base_link"/>
+        <child link="kinect_link"/>
+    </joint>
+
+    <!-- Camera -->
+    <joint name="camera_joint" type="fixed">
+        <origin xyz="${camera_offset_x} ${camera_offset_y} ${camera_offset_z}" rpy="0 0 0" />
+        <parent link="base_link"/>
+        <child link="camera_link"/>
+    </joint>
+
+
+    <xacro:rplidar prefix="laser"/>
+    <xacro:kinect_camera prefix="kinect"/>
+    <xacro:usb_camera prefix="camera"/>
+
+    <mbot_base_gazebo/>
+
+</robot>

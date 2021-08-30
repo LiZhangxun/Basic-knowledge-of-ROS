@@ -1,0 +1,8 @@
+prefix=/home/lizhangxun/GYROBOT_RVIZ_GAZEBO/devel
+
+Name: may_arm
+Description: Description of may_arm
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

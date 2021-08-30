@@ -1,0 +1,2 @@
+arbotix_ros/arbotix:arbotix_ros/arbotix_controllers:arbotix_ros/arbotix_firmware:arbotix_ros/arbotix_msgs:arbotix_ros/arbotix_python:arbotix_ros/arbotix_sensors:may_arm:mbot_description:mbot_gazebo:mbot_teleop:mrobot_description:mrobot_gazebo:mrobot_teleop
+-DCATKIN_DEVEL_PREFIX=/home/lizhangxun/GYROBOT_RVIZ_GAZEBO/devel -DCMAKE_INSTALL_PREFIX=/home/lizhangxun/GYROBOT_RVIZ_GAZEBO/install -G Unix Makefiles
