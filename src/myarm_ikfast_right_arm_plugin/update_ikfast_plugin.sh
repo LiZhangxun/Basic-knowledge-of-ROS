@@ -1,0 +1,1 @@
+rosrun moveit_kinematics create_ikfast_moveit_plugin.py myarm right_arm myarm_ikfast_right_arm_plugin /home/lizhangxun/NJAU_MushRoom_Picking_device/src/myarm_ikfast_right_arm_plugin/src/myarm_right_arm_ikfast_solver.cpp

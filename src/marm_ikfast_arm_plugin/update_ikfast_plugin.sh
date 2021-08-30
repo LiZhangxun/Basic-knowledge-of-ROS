@@ -1,0 +1,1 @@
+rosrun moveit_kinematics create_ikfast_moveit_plugin.py marm arm marm_ikfast_arm_plugin /home/lizhangxun/GYROBOT_MOVE_IT/src/marm_ikfast_arm_plugin/src/marm_arm_ikfast_solver.cpp

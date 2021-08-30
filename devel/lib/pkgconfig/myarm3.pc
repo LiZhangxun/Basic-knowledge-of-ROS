@@ -1,0 +1,8 @@
+prefix=/home/lizhangxun/GYROBOT_MOVE_IT/devel
+
+Name: myarm3
+Description: Description of myarm3
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

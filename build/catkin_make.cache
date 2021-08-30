@@ -1,0 +1,2 @@
+marm_description:marm_gazebo:marm_ikfast_arm_plugin:marm_moveit_config:marm_planning:myarm:myarm_ikfast_left_arm_plugin:myarm_ikfast_right_arm_plugin:myarm_moveit_config
+-DCMAKE_BUILD_TYPE=Debug -DCATKIN_DEVEL_PREFIX=/home/lizhangxun/GYROBOT_MOVE_IT/devel -DCMAKE_INSTALL_PREFIX=/home/lizhangxun/GYROBOT_MOVE_IT/install -G Unix Makefiles
