@@ -90,17 +90,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -132,6 +121,17 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -271,6 +271,246 @@ control_toolbox_generate_messages_lisp/fast:
 .PHONY : control_toolbox_generate_messages_lisp/fast
 
 # Convenience name for target.
+mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_eus.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_eus.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+control_toolbox_generate_messages_eus: mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_eus.dir/rule
+
+.PHONY : control_toolbox_generate_messages_eus
+
+# fast build rule for target.
+control_toolbox_generate_messages_eus/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_eus.dir/build.make mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_eus.dir/build
+.PHONY : control_toolbox_generate_messages_eus/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+controller_manager_msgs_generate_messages_py: mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
+
+.PHONY : controller_manager_msgs_generate_messages_py
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_py/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
+.PHONY : controller_manager_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+controller_manager_msgs_generate_messages_nodejs: mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : controller_manager_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_nodejs/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
+.PHONY : controller_manager_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+controller_manager_msgs_generate_messages_lisp: mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : controller_manager_msgs_generate_messages_lisp
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_lisp/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
+.PHONY : controller_manager_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+controller_manager_msgs_generate_messages_cpp: mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : controller_manager_msgs_generate_messages_cpp
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_cpp/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
+.PHONY : controller_manager_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/rule
+
+# Convenience name for target.
+gazebo_ros_gencfg: mbot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/rule
+
+.PHONY : gazebo_ros_gencfg
+
+# fast build rule for target.
+gazebo_ros_gencfg/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build.make mbot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build
+.PHONY : gazebo_ros_gencfg/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_py: mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_py
+
+# fast build rule for target.
+octomap_msgs_generate_messages_py/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_py.dir/build.make mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_py.dir/build
+.PHONY : octomap_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_lisp: mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_lisp
+
+# fast build rule for target.
+octomap_msgs_generate_messages_lisp/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build
+.PHONY : octomap_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_cpp: mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_cpp
+
+# fast build rule for target.
+octomap_msgs_generate_messages_cpp/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build
+.PHONY : octomap_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_nodejs: mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : object_recognition_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_nodejs/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build.make mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build
+.PHONY : object_recognition_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+control_toolbox_generate_messages_cpp: mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule
+
+.PHONY : control_toolbox_generate_messages_cpp
+
+# fast build rule for target.
+control_toolbox_generate_messages_cpp/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build.make mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build
+.PHONY : control_toolbox_generate_messages_cpp/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_lisp: mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : object_recognition_msgs_generate_messages_lisp
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_lisp/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build.make mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build
+.PHONY : object_recognition_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_eus: mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_eus
+
+# fast build rule for target.
+octomap_msgs_generate_messages_eus/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build.make mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build
+.PHONY : octomap_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_cpp: mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : object_recognition_msgs_generate_messages_cpp
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_cpp/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build.make mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build
+.PHONY : object_recognition_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_py.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_py: mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
+
+.PHONY : shape_msgs_generate_messages_py
+
+# fast build rule for target.
+shape_msgs_generate_messages_py/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_py.dir/build.make mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_py.dir/build
+.PHONY : shape_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_eus: mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule
+
+.PHONY : object_recognition_msgs_generate_messages_eus
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_eus/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build.make mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build
+.PHONY : object_recognition_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
 mbot_gazebo/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule:
 	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
 .PHONY : mbot_gazebo/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
@@ -299,21 +539,6 @@ nav_msgs_generate_messages_lisp: mbot_gazebo/CMakeFiles/nav_msgs_generate_messag
 nav_msgs_generate_messages_lisp/fast:
 	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make mbot_gazebo/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
 .PHONY : nav_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
-.PHONY : mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-controller_manager_msgs_generate_messages_cpp: mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : controller_manager_msgs_generate_messages_cpp
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_cpp/fast:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
-.PHONY : controller_manager_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 mbot_gazebo/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
@@ -496,21 +721,6 @@ gazebo_msgs_generate_messages_py/fast:
 .PHONY : gazebo_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
-.PHONY : mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-controller_manager_msgs_generate_messages_lisp: mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : controller_manager_msgs_generate_messages_lisp
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_lisp/fast:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
-.PHONY : controller_manager_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
 mbot_gazebo/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule
 .PHONY : mbot_gazebo/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule
@@ -539,6 +749,51 @@ gazebo_msgs_generate_messages_cpp: mbot_gazebo/CMakeFiles/gazebo_msgs_generate_m
 gazebo_msgs_generate_messages_cpp/fast:
 	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make mbot_gazebo/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build
 .PHONY : gazebo_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+controller_manager_msgs_generate_messages_eus: mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
+
+.PHONY : controller_manager_msgs_generate_messages_eus
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_eus/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build
+.PHONY : controller_manager_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/bond_generate_messages_cpp.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/bond_generate_messages_cpp.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/bond_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_cpp: mbot_gazebo/CMakeFiles/bond_generate_messages_cpp.dir/rule
+
+.PHONY : bond_generate_messages_cpp
+
+# fast build rule for target.
+bond_generate_messages_cpp/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/bond_generate_messages_cpp.dir/build.make mbot_gazebo/CMakeFiles/bond_generate_messages_cpp.dir/build
+.PHONY : bond_generate_messages_cpp/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_py: mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
+
+.PHONY : object_recognition_msgs_generate_messages_py
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_py/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build.make mbot_gazebo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build
+.PHONY : object_recognition_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 mbot_gazebo/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule:
@@ -586,6 +841,21 @@ nav_msgs_generate_messages_cpp/fast:
 .PHONY : nav_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_cpp: mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : shape_msgs_generate_messages_cpp
+
+# fast build rule for target.
+shape_msgs_generate_messages_cpp/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build
+.PHONY : shape_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
 mbot_gazebo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
 	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
 .PHONY : mbot_gazebo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
@@ -631,21 +901,6 @@ nodelet_generate_messages_cpp/fast:
 .PHONY : nodelet_generate_messages_cpp/fast
 
 # Convenience name for target.
-mbot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
-.PHONY : mbot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-trajectory_msgs_generate_messages_cpp: mbot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : trajectory_msgs_generate_messages_cpp
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_cpp/fast:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make mbot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
-.PHONY : trajectory_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
 mbot_gazebo/CMakeFiles/gazebo_plugins_gencfg.dir/rule:
 	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/gazebo_plugins_gencfg.dir/rule
 .PHONY : mbot_gazebo/CMakeFiles/gazebo_plugins_gencfg.dir/rule
@@ -676,19 +931,19 @@ std_srvs_generate_messages_cpp/fast:
 .PHONY : std_srvs_generate_messages_cpp/fast
 
 # Convenience name for target.
-mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
-.PHONY : mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
+mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-controller_manager_msgs_generate_messages_nodejs: mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
+moveit_msgs_generate_messages_cpp: mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : controller_manager_msgs_generate_messages_nodejs
+.PHONY : moveit_msgs_generate_messages_cpp
 
 # fast build rule for target.
-controller_manager_msgs_generate_messages_nodejs/fast:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
-.PHONY : controller_manager_msgs_generate_messages_nodejs/fast
+moveit_msgs_generate_messages_cpp/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build.make mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build
+.PHONY : moveit_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 mbot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule:
@@ -704,21 +959,6 @@ trajectory_msgs_generate_messages_nodejs: mbot_gazebo/CMakeFiles/trajectory_msgs
 trajectory_msgs_generate_messages_nodejs/fast:
 	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make mbot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
 .PHONY : trajectory_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule
-.PHONY : mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-control_toolbox_generate_messages_cpp: mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule
-
-.PHONY : control_toolbox_generate_messages_cpp
-
-# fast build rule for target.
-control_toolbox_generate_messages_cpp/fast:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build.make mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build
-.PHONY : control_toolbox_generate_messages_cpp/fast
 
 # Convenience name for target.
 mbot_gazebo/CMakeFiles/bond_generate_messages_eus.dir/rule:
@@ -749,6 +989,21 @@ bond_generate_messages_lisp: mbot_gazebo/CMakeFiles/bond_generate_messages_lisp.
 bond_generate_messages_lisp/fast:
 	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/bond_generate_messages_lisp.dir/build.make mbot_gazebo/CMakeFiles/bond_generate_messages_lisp.dir/build
 .PHONY : bond_generate_messages_lisp/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_nodejs: mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : shape_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+shape_msgs_generate_messages_nodejs/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build.make mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build
+.PHONY : shape_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 mbot_gazebo/CMakeFiles/nodelet_generate_messages_eus.dir/rule:
@@ -796,6 +1051,51 @@ nav_msgs_generate_messages_eus/fast:
 .PHONY : nav_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
+mbot_gazebo/CMakeFiles/control_toolbox_gencfg.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/control_toolbox_gencfg.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/control_toolbox_gencfg.dir/rule
+
+# Convenience name for target.
+control_toolbox_gencfg: mbot_gazebo/CMakeFiles/control_toolbox_gencfg.dir/rule
+
+.PHONY : control_toolbox_gencfg
+
+# fast build rule for target.
+control_toolbox_gencfg/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/control_toolbox_gencfg.dir/build.make mbot_gazebo/CMakeFiles/control_toolbox_gencfg.dir/build
+.PHONY : control_toolbox_gencfg/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_nodejs: mbot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_nodejs
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_nodejs/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make mbot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_lisp: mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : moveit_msgs_generate_messages_lisp
+
+# fast build rule for target.
+moveit_msgs_generate_messages_lisp/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build.make mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build
+.PHONY : moveit_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
 mbot_gazebo/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
 .PHONY : mbot_gazebo/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
@@ -811,36 +1111,6 @@ nav_msgs_generate_messages_nodejs/fast:
 .PHONY : nav_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-mbot_gazebo/CMakeFiles/bond_generate_messages_cpp.dir/rule:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/bond_generate_messages_cpp.dir/rule
-.PHONY : mbot_gazebo/CMakeFiles/bond_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_cpp: mbot_gazebo/CMakeFiles/bond_generate_messages_cpp.dir/rule
-
-.PHONY : bond_generate_messages_cpp
-
-# fast build rule for target.
-bond_generate_messages_cpp/fast:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/bond_generate_messages_cpp.dir/build.make mbot_gazebo/CMakeFiles/bond_generate_messages_cpp.dir/build
-.PHONY : bond_generate_messages_cpp/fast
-
-# Convenience name for target.
-mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
-.PHONY : mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-controller_manager_msgs_generate_messages_eus: mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
-
-.PHONY : controller_manager_msgs_generate_messages_eus
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_eus/fast:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build
-.PHONY : controller_manager_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
 mbot_gazebo/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
 	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
 .PHONY : mbot_gazebo/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
@@ -854,6 +1124,21 @@ nav_msgs_generate_messages_py: mbot_gazebo/CMakeFiles/nav_msgs_generate_messages
 nav_msgs_generate_messages_py/fast:
 	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make mbot_gazebo/CMakeFiles/nav_msgs_generate_messages_py.dir/build
 .PHONY : nav_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_py: mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
+
+.PHONY : moveit_msgs_generate_messages_py
+
+# fast build rule for target.
+moveit_msgs_generate_messages_py/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_py.dir/build.make mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_py.dir/build
+.PHONY : moveit_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 mbot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule:
@@ -901,79 +1186,94 @@ dynamic_reconfigure_gencfg/fast:
 .PHONY : dynamic_reconfigure_gencfg/fast
 
 # Convenience name for target.
-mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_eus.dir/rule:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_eus.dir/rule
-.PHONY : mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_eus.dir/rule
+mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-control_toolbox_generate_messages_eus: mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_eus.dir/rule
+moveit_msgs_generate_messages_eus: mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule
 
-.PHONY : control_toolbox_generate_messages_eus
+.PHONY : moveit_msgs_generate_messages_eus
 
 # fast build rule for target.
-control_toolbox_generate_messages_eus/fast:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_eus.dir/build.make mbot_gazebo/CMakeFiles/control_toolbox_generate_messages_eus.dir/build
-.PHONY : control_toolbox_generate_messages_eus/fast
+moveit_msgs_generate_messages_eus/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build.make mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build
+.PHONY : moveit_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-mbot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/rule:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/rule
-.PHONY : mbot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/rule
+mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-gazebo_ros_gencfg: mbot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/rule
+moveit_msgs_generate_messages_nodejs: mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : gazebo_ros_gencfg
+.PHONY : moveit_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-gazebo_ros_gencfg/fast:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build.make mbot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build
-.PHONY : gazebo_ros_gencfg/fast
+moveit_msgs_generate_messages_nodejs/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build.make mbot_gazebo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build
+.PHONY : moveit_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
-.PHONY : mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
+mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-controller_manager_msgs_generate_messages_py: mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
+octomap_msgs_generate_messages_nodejs: mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : controller_manager_msgs_generate_messages_py
+.PHONY : octomap_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-controller_manager_msgs_generate_messages_py/fast:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make mbot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
-.PHONY : controller_manager_msgs_generate_messages_py/fast
+octomap_msgs_generate_messages_nodejs/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build.make mbot_gazebo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build
+.PHONY : octomap_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-mbot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
-.PHONY : mbot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+mbot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_nodejs: mbot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+trajectory_msgs_generate_messages_cpp: mbot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : dynamic_reconfigure_generate_messages_nodejs
+.PHONY : trajectory_msgs_generate_messages_cpp
 
 # fast build rule for target.
-dynamic_reconfigure_generate_messages_nodejs/fast:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make mbot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
+trajectory_msgs_generate_messages_cpp/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make mbot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+.PHONY : trajectory_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-mbot_gazebo/CMakeFiles/control_toolbox_gencfg.dir/rule:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/control_toolbox_gencfg.dir/rule
-.PHONY : mbot_gazebo/CMakeFiles/control_toolbox_gencfg.dir/rule
+mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-control_toolbox_gencfg: mbot_gazebo/CMakeFiles/control_toolbox_gencfg.dir/rule
+shape_msgs_generate_messages_eus: mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule
 
-.PHONY : control_toolbox_gencfg
+.PHONY : shape_msgs_generate_messages_eus
 
 # fast build rule for target.
-control_toolbox_gencfg/fast:
-	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/control_toolbox_gencfg.dir/build.make mbot_gazebo/CMakeFiles/control_toolbox_gencfg.dir/build
-.PHONY : control_toolbox_gencfg/fast
+shape_msgs_generate_messages_eus/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_eus.dir/build.make mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_eus.dir/build
+.PHONY : shape_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
+.PHONY : mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_lisp: mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : shape_msgs_generate_messages_lisp
+
+# fast build rule for target.
+shape_msgs_generate_messages_lisp/fast:
+	cd /home/lizhangxun/GYROBOT_SLAM/build && $(MAKE) -f mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build.make mbot_gazebo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build
+.PHONY : shape_msgs_generate_messages_lisp/fast
 
 # Help Target
 help:
@@ -991,9 +1291,24 @@ help:
 	@echo "... control_toolbox_generate_messages_py"
 	@echo "... control_toolbox_generate_messages_nodejs"
 	@echo "... control_toolbox_generate_messages_lisp"
+	@echo "... control_toolbox_generate_messages_eus"
+	@echo "... controller_manager_msgs_generate_messages_py"
+	@echo "... controller_manager_msgs_generate_messages_nodejs"
+	@echo "... controller_manager_msgs_generate_messages_lisp"
+	@echo "... controller_manager_msgs_generate_messages_cpp"
+	@echo "... gazebo_ros_gencfg"
+	@echo "... octomap_msgs_generate_messages_py"
+	@echo "... octomap_msgs_generate_messages_lisp"
+	@echo "... octomap_msgs_generate_messages_cpp"
+	@echo "... object_recognition_msgs_generate_messages_nodejs"
+	@echo "... control_toolbox_generate_messages_cpp"
+	@echo "... object_recognition_msgs_generate_messages_lisp"
+	@echo "... octomap_msgs_generate_messages_eus"
+	@echo "... object_recognition_msgs_generate_messages_cpp"
+	@echo "... shape_msgs_generate_messages_py"
+	@echo "... object_recognition_msgs_generate_messages_eus"
 	@echo "... nodelet_generate_messages_nodejs"
 	@echo "... nav_msgs_generate_messages_lisp"
-	@echo "... controller_manager_msgs_generate_messages_cpp"
 	@echo "... nodelet_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... dynamic_reconfigure_generate_messages_cpp"
@@ -1006,42 +1321,47 @@ help:
 	@echo "... trajectory_msgs_generate_messages_lisp"
 	@echo "... gazebo_msgs_generate_messages_eus"
 	@echo "... gazebo_msgs_generate_messages_py"
-	@echo "... controller_manager_msgs_generate_messages_lisp"
 	@echo "... gazebo_msgs_generate_messages_nodejs"
 	@echo "... gazebo_msgs_generate_messages_cpp"
+	@echo "... controller_manager_msgs_generate_messages_eus"
+	@echo "... bond_generate_messages_cpp"
+	@echo "... object_recognition_msgs_generate_messages_py"
 	@echo "... gazebo_msgs_generate_messages_lisp"
 	@echo "... nodelet_generate_messages_py"
 	@echo "... nav_msgs_generate_messages_cpp"
+	@echo "... shape_msgs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... trajectory_msgs_generate_messages_eus"
 	@echo "... nodelet_generate_messages_cpp"
-	@echo "... test"
-	@echo "... trajectory_msgs_generate_messages_cpp"
 	@echo "... gazebo_plugins_gencfg"
 	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... controller_manager_msgs_generate_messages_nodejs"
+	@echo "... moveit_msgs_generate_messages_cpp"
 	@echo "... install/local"
 	@echo "... trajectory_msgs_generate_messages_nodejs"
-	@echo "... control_toolbox_generate_messages_cpp"
 	@echo "... list_install_components"
 	@echo "... bond_generate_messages_eus"
 	@echo "... bond_generate_messages_lisp"
+	@echo "... shape_msgs_generate_messages_nodejs"
 	@echo "... nodelet_generate_messages_eus"
 	@echo "... bond_generate_messages_nodejs"
 	@echo "... install/strip"
 	@echo "... nav_msgs_generate_messages_eus"
+	@echo "... control_toolbox_gencfg"
+	@echo "... dynamic_reconfigure_generate_messages_nodejs"
+	@echo "... moveit_msgs_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_nodejs"
-	@echo "... bond_generate_messages_cpp"
-	@echo "... controller_manager_msgs_generate_messages_eus"
 	@echo "... nav_msgs_generate_messages_py"
+	@echo "... moveit_msgs_generate_messages_py"
 	@echo "... dynamic_reconfigure_generate_messages_eus"
 	@echo "... dynamic_reconfigure_generate_messages_py"
 	@echo "... dynamic_reconfigure_gencfg"
-	@echo "... control_toolbox_generate_messages_eus"
-	@echo "... gazebo_ros_gencfg"
-	@echo "... controller_manager_msgs_generate_messages_py"
-	@echo "... dynamic_reconfigure_generate_messages_nodejs"
-	@echo "... control_toolbox_gencfg"
+	@echo "... moveit_msgs_generate_messages_eus"
+	@echo "... moveit_msgs_generate_messages_nodejs"
+	@echo "... test"
+	@echo "... octomap_msgs_generate_messages_nodejs"
+	@echo "... trajectory_msgs_generate_messages_cpp"
+	@echo "... shape_msgs_generate_messages_eus"
+	@echo "... shape_msgs_generate_messages_lisp"
 .PHONY : help
 
 

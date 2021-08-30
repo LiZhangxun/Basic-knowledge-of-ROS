@@ -7,4 +7,11 @@
 # new environment variables
 
 # modified environment variables
+export CMAKE_PREFIX_PATH="/home/lizhangxun/GYROBOT_SLAM/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/lizhangxun/GYROBOT_SLAM/devel/lib:$LD_LIBRARY_PATH"
+export PATH="/home/lizhangxun/GYROBOT_SLAM/devel/bin:$PATH"
+export PKG_CONFIG_PATH="/home/lizhangxun/GYROBOT_SLAM/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/lizhangxun/GYROBOT_SLAM/build"
+export PYTHONPATH="/home/lizhangxun/GYROBOT_SLAM/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/lizhangxun/GYROBOT_SLAM/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/lizhangxun/GYROBOT_SLAM/src:$ROS_PACKAGE_PATH"

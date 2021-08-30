@@ -1,0 +1,14 @@
+std_msgs/Header header -->消息的头
+  uint32 seq           -->序号
+  time stamp           -->时间戳
+  string frame_id      -->坐标系
+float32 angle_min      -->可检测范围的起始角度(起始+终止就是总共检测范围,国产雷达可以设置成-180-180°,也就是360°)
+float32 angle_max      -->可检测范围的终止角度
+float32 angle_increment-->相邻数据帧之间的角度步长
+float32 time_increment -->采集到相邻数据帧之间的时间
+float32 scan_time      -->采集一帧数据所需时间
+float32 range_min      -->最近可检测深度的阈值
+float32 range_max      -->最远可检测深度的阈值
+float32[] ranges       -->一帧深度数据的存储数组
+float32[] intensities  -->激光雷达每个激光点的强度,即发送出去,反射回来接收到的激光的强度.
+
