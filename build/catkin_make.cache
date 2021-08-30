@@ -1,0 +1,2 @@
+arbotix_ros/arbotix:arbotix_ros/arbotix_controllers:arbotix_ros/arbotix_firmware:arbotix_ros/arbotix_msgs:arbotix_ros/arbotix_python:arbotix_ros/arbotix_sensors:mbot_bringup:mbot_description:mbot_gazebo:mbot_navigation:mbot_teleop
+-DCATKIN_DEVEL_PREFIX=/home/lizhangxun/GYROBOT_SLAM/devel -DCMAKE_INSTALL_PREFIX=/home/lizhangxun/GYROBOT_SLAM/install -G Unix Makefiles

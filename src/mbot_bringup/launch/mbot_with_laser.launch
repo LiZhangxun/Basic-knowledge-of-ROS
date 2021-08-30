@@ -1,0 +1,31 @@
+<launch>
+
+    <!-- 启动mbot -->
+    <node pkg="mbot_bringup" type="mbot_bringup" name="mbot_bringup" output="screen" />
+
+    <!-- 加载机器人模型参数 -->
+    <param name="robot_description" textfile="$(find mbot_description)/urdf/urdf/mbot_with_laser.urdf" />
+
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />  
+
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="state_publisher">
+        <param name="publish_frequency" type="double" value="5.0" />
+    </node>
+
+    <!-- 里程计估算(启动卡尔曼滤波，对odom进行滤波处理后再发布) -->
+    <!-- 多传感器融合-视觉/imu/odom -->
+    <node pkg="robot_pose_ekf" type="robot_pose_ekf" name="robot_pose_ekf">
+        <remap from="robot_pose_ekf/odom_combined" to="odom_combined"/>
+        <param name="freq" value="10.0"/>
+        <param name="sensor_timeout" value="1.0"/>
+        <param name="publish_tf" value="true"/>
+        <param name="odom_used" value="true"/><!-- 编码器部分 -->
+        <param name="imu_used" value="false"/><!-- imu惯性测量单元部分 -->
+        <param name="vo_used" value="false"/><!-- 视觉里程计 -->
+        <param name="output_frame" value="odom"/>
+    </node>
+
+    <!-- 运行激光雷达驱动 -->
+    <include file="$(find mbot_bringup)/launch/rplidar.launch" />
+
+</launch>
