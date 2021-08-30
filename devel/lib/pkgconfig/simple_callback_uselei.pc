@@ -1,0 +1,8 @@
+prefix=/home/lizhangxun/ROS_C++/devel
+
+Name: simple_callback_uselei
+Description: Description of simple_callback_uselei
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

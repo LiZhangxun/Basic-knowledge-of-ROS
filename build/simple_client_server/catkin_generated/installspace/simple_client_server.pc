@@ -1,0 +1,8 @@
+prefix=/home/lizhangxun/ROS_C++/install
+
+Name: simple_client_server
+Description: Description of simple_client_server
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

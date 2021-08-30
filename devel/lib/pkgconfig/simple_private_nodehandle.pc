@@ -1,0 +1,8 @@
+prefix=/home/lizhangxun/ROS_C++/devel
+
+Name: simple_private_nodehandle
+Description: Description of simple_private_nodehandle
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

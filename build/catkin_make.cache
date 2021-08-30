@@ -1,0 +1,2 @@
+actionlib_tutorials:learn_timers:nodelet_tutorial_math:pluginlib_tutorials:ros_tutorials_parameter:simple_callback_uselei:simple_client_server:simple_parameter:simple_private_nodehandle:simple_pub_sub:turtle_actionlib
+-DCATKIN_DEVEL_PREFIX=/home/lizhangxun/ROS_C++/devel -DCMAKE_INSTALL_PREFIX=/home/lizhangxun/ROS_C++/install -G Unix Makefiles
